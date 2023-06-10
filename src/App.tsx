@@ -1,10 +1,12 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import giphy from 'giphy-api';
+// import dotenv from 'dotenv'
 import './App.css'
 import SearchBar from './components/SearchBar';
 import Gif from './components/Gif';
 import GifList from './components/GifList';
+// dotenv.config();
 
 
 function App() {
@@ -15,9 +17,8 @@ function App() {
   //   {id: "U8iiB9GBdt5t9n1I6J"},
   //   {id: "kCVIL0CLNWv2E"}
   // ]
-
   const search = (query:string) => {
-    giphy('jbjke9ALxOmm1G6pGYZjjvM1wmjZKiAP').search({
+    giphy(import.meta.env.VITE_REACT_APP_GIPHY_API_KEY).search({
       q: query,
       rating: 'g',
       limit: 10
