@@ -13,7 +13,7 @@ As you type, the app will automatically fetch and display related GIFs from the 
 Scroll down to view more GIFs.
 Click on any GIF to open it on selection dom element.
 
-**There are some common tricky issues that you may encounter when calling the GIPHY API, below with the solution worked for my case:**
+**There are some common tricky issues that you may encounter when calling the GIPHY API(IF YOU STORE IT IN .ENV), below with the solution worked for my case:**
 **ERROR** :
 **Uncaught ReferenceError: process is not defined in typescript**
 
